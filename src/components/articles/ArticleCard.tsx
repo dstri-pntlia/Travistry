@@ -29,7 +29,7 @@ interface ArticleCardProps {
   isOwner?: boolean
 }
 
-const ArticleCard = ({ article, onDelete, isOwner = false }: ArticleCardProps) => {
+const ArticleCard = ({ article, onDelete }: ArticleCardProps) => {
   return (
     <Card className="h-full flex flex-col shadow-md hover:shadow-lg transition-shadow duration-300 rounded-2xl overflow-hidden">
       {article.cover_image_url && (

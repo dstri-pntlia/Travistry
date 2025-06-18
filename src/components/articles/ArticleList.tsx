@@ -1,6 +1,5 @@
 // components/articles/ArticleList.tsx
 import ArticleCard from './ArticleCard'
-import ArticleFilter from './ArticleFilter'
 import Pagination from './Pagination'
 import LoadingSpinner from '../common/LoadingSpinner'
 import type { Article, ArticleParams } from '../../types/article'
@@ -24,8 +23,6 @@ const ArticleList = ({
   loading,
   error,
   pagination,
-  filters,
-  onFilterChange,
   onPageChange,
   onDelete
 }: ArticleListProps) => {
